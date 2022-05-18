@@ -48,7 +48,7 @@ body {
 @font-face {
     font-family: 'Comic Shark';
     /*a name to be used later*/
-    src: url("/assets/fonts/Comic Shark.ttf");
+    src: url("https://isneeze.github.io/conguratulations/assets/fonts/Comic Shark.ttf");
     /*URL to font*/
 }
 
