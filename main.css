@@ -1,0 +1,162 @@
+/* import page styles here */
+@import "/pages/sneeze/pagestyle.css";
+
+body {
+    font-family: "Lato", sans-serif;
+    background: linear-gradient(rgb(91, 172, 238), rgb(0, 27, 148));
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: transparent;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.flexnav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #0f1849;
+}
+
+.sidenav a:hover {
+    color: #0197d3;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🦶</text></svg>") 16 0, auto;
+}
+
+.mainpage {
+    margin-left: 200px;
+    /* Same as the width of the sidenav */
+    font-size: 28px;
+    background-color: transparent;
+}
+
+.page {
+    background-color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    padding: 64px 32px 64px 32px;
+    border-radius: 24px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+@font-face {
+    font-family: 'Comic Shark';
+    /*a name to be used later*/
+    src: url("https://isneeze.github.io/conguratulations/assets/fonts/Comic Shark.ttf");
+    /*URL to font*/
+}
+
+.wacky-font {
+    font-family: "Comic Shark";
+}
+
+/* Sidenav Shrimps */
+img.shrimp {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: #818181;
+    border-width: 4px;
+    background-color: rgb(145, 199, 247);
+
+}
+
+.flexnav a span {
+    margin-left: 8px;
+}
+
+a.shrimp {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: start;
+    width: 160px;
+    height: 50px;
+    border-radius: 31px;
+    border-width: 4px;
+    background-color: aliceblue;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    transition-delay: 0s;
+}
+
+a.home {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: start;
+    width: 100px;
+    height: 50px;
+    border-radius: 31px;
+    border-width: 4px;
+    background-color: aliceblue;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    transition-delay: 0s;
+    justify-content: center;
+    justify-self: flex-start;
+}
+
+a.home:hover {
+    transform: translateX(10px);
+}
+
+a.shrimp:hover {
+    transform: translateX(10px);
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+}
+
+.banner .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    background-color: #ffffff;
+    margin-top: 64px;
+    padding: 24px;
+    /* TODO: idk change this to look good */
+    border-top-left-radius: 69px;
+    border-top-right-radius: 69px;
+}
+
+.banner img.shrimp {
+    width: auto;
+    height: auto;
+    max-width: 100px;
+    max-height: 100px;
+    padding: 0px;
+    border-radius: 0px;
+    background-color: transparent;
+    object-fit: contain;
+}

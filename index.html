@@ -5,48 +5,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="main.css" />
     <link rel="icon" href="/assets/images/guraPat.png" type="image/png" />
+    <link href="pages/iSneeze.html" rel="import" />
     <title>Conguratulations (name pending)</title>
 </head>
 
 <body>
     <!-- who even looks at the source code lmao -->
-    <script src="scripts/main.js"></script>
+    <script src="main.js"></script>
     <div class="sidenav">
-        </br>
-        <a href="#"><img src="assets/images/ebi-chef.png" width="50" height="50">many</a>
-        <a href="#"><img src="assets/images/ebi-chef.png" width="50" height="50">many</a>
-        <a href="#"><img src="assets/images/ebi-chef.png" width="50" height="50">shrimps</a>
-        <a href="#"><img src="assets/images/ebi-chef.png" width="50" height="50">here</a>
-        <a href="#" onclick="sharkGoesA()"><img src="assets/images/ebi-chef.png" width="50" height="50">A</a>
+        <div class="flexnav">
+            <a class="home" href="#home">Home</a>
+            <a class="shrimp" href="#shrimp1"><img class="shrimp" src="assets/images/ebi-chef.png"><span>many</span></a>
+            <a class="shrimp" href="#shrimp2"><img class="shrimp" src="assets/images/ebi-chef.png"><span>many</span></a>
+            <a class="shrimp" href="#shrimp3"><img class="shrimp"
+                    src="assets/images/ebi-chef.png"><span>Shrimps</span></a>
+            <a class="shrimp" href="#shrimp4"><img class="shrimp" src="assets/images/ebi-chef.png"><span>here</span></a>
+            <a class="shrimp" href="#shrimp5" onclick="sharkGoesA()"><img class="shrimp"
+                    src="assets/images/ebi-chef.png"><span>A</span></a>
+        </div>
     </div>
 
     <!-- Page content -->
-    <div class="main">
-        <h2 class="wacky-font">Habby birbday gawr gwombus</h2>
-        <p>ayyy lmao</p>
-        <img src="https://preview.redd.it/7kbzftv1bdm61.jpg?width=960&crop=smart&auto=webp&s=218f3788e5f38f1d8d378b2235e0825549440193"
-            height="500">
-        <p>Me when the. You know the. I like it when. You see, that's when. When da. When da funny.</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/l5WIG1onKSk" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+    <div class="mainpage" id="home">
+        <div class="page">
+            <h2 class="wacky-font">Habby birbday gawr gwombus</h2>
+            <p>ayyy lmao</p>
+            <img src="https://preview.redd.it/7kbzftv1bdm61.jpg?width=960&crop=smart&auto=webp&s=218f3788e5f38f1d8d378b2235e0825549440193"
+                height="500">
+            <p>Me when the. You know the. I like it when. You see, that's when. When da. When da funny.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/l5WIG1onKSk"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
 
-        <h3>shork goes...</h3>
-        <audio controls>
-            <source src="https://isneeze.github.io/conguratulations/assets/audio/gawr-gura-a.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-        <p>ahh the pepeloni, pepeloni. you know the pepeloni? the nooo one. i always, i always order the, the domino.
-            domino pepeloni and without pepeloni. i always order the pepeloni and without pepeloni. pepeloni! i like
-            pepeloni, yeah. i always, i always order the, the cheese- cheese pan. ahh how can i explain? i can explain
-            by my drawing! i always order like the cheese pan that it has cheese on here, this part, the ear. ear of
-            pizza. and then, i order- wh- when i order pepeloni, the ear- it always have a pepeloni on h- on a top, but
-            i pick up these... away! cause i don't eat it. and then i eat the cheese pan pizza. okay? you understand?
-            understandable! pepeloni! <a href="https://youtu.be/Brx3TikoO_s">yes.</a> </p>
+            <h3>shork goes...</h3>
+            <audio controls>
+                <source src="https://isneeze.github.io/conguratulations/assets/audio/gawr-gura-a.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p>ahh the pepeloni, pepeloni. you know the pepeloni? the nooo one. i always, i always order the, the
+                domino.
+                domino pepeloni and without pepeloni. i always order the pepeloni and without pepeloni. pepeloni! i like
+                pepeloni, yeah. i always, i always order the, the cheese- cheese pan. ahh how can i explain? i can
+                explain
+                by my drawing! i always order like the cheese pan that it has cheese on here, this part, the ear. ear of
+                pizza. and then, i order- wh- when i order pepeloni, the ear- it always have a pepeloni on h- on a top,
+                but
+                i pick up these... away! cause i don't eat it. and then i eat the cheese pan pizza. okay? you
+                understand?
+                understandable! pepeloni! <a href="https://youtu.be/Brx3TikoO_s">yes.</a> </p>
+        </div>
+
+        <!-- pretty hacky but one way to structure multiple files is to have an iframe copy its content and then remove itself. lol.-->
+        <div id="shrimp1">
+            <div class="banner">
+                <div class="content">
+                    <img class="shrimp" src="assets/images/ebi-chef.png">
+                    <span> Shrimpy name 1</span>
+                </div>
+            </div>
+            <div class="page flexSneeze">
+                <script src="pages/sneeze/canvas.js"></script>
+                <iframe src="./pages/sneeze/page.html"
+                    onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+            </div>
+        </div>
+        <div id="shrimp2">
+            <div class="banner">
+                <div class="content">
+                    <img class="shrimp" src="assets/images/ebi-chef.png">
+                    <span> Shrimpy name 2</span>
+                </div>
+            </div>
+            <div class="page flexSneeze">
+                <script src="pages/sneeze/canvas.js"></script>
+                <iframe src="./pages/sneeze/page.html"
+                    onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+            </div>
+        </div>
+        <div id="shrimp3">
+            <div class="banner">
+                <div class="content">
+                    <img class="shrimp" src="assets/images/ebi-chef.png">
+                    <span> Shrimpy name 3</span>
+                </div>
+            </div>
+            <div class="page flexSneeze">
+                <script src="pages/sneeze/canvas.js"></script>
+                <iframe src="./pages/sneeze/page.html"
+                    onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+            </div>
+        </div>
+        <div id="shrimp4">
+            <div class="banner">
+                <div class="content">
+                    <img class="shrimp" src="assets/images/ebi-chef.png">
+                    <span> Shrimpy name 4</span>
+                </div>
+            </div>
+            <div class="page flexSneeze">
+                <script src="pages/sneeze/canvas.js"></script>
+                <iframe src="./pages/sneeze/page.html"
+                    onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+            </div>
+        </div>
+        <div id="shrimp5">
+            <div class="banner">
+                <div class="content">
+                    <img class="shrimp" src="assets/images/ebi-chef.png">
+                    <span> Shrimpy name 5</span>
+                </div>
+            </div>
+            <div class="page flexSneeze">
+                <script src="pages/sneeze/canvas.js"></script>
+                <iframe src="./pages/sneeze/page.html"
+                    onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+            </div>
+        </div>
     </div>
+
+
 </body>
 
 </html>
