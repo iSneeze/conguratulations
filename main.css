@@ -48,7 +48,19 @@ body {
 }
 
 .page {
-    background-color: #ffffff;
+    background-color: #CBF3F6;
+    font-size: 24px;
+    text-align: center;
+    padding: 64px 32px 64px 32px;
+    border-radius: 24px;
+}
+
+#IntroText {
+
+    background-color: #A8BDCD;
+    border: dotted;
+    border-width: 3px;
+    border-color: #86949E;
     font-size: 24px;
     text-align: center;
     padding: 64px 32px 64px 32px;
@@ -159,4 +171,22 @@ a.shrimp:hover {
     border-radius: 0px;
     background-color: transparent;
     object-fit: contain;
+}
+
+#postcard {
+    margin-top: 20px;
+}
+
+img.shrimpD  {
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+    border: #818181;
+    border-width: 4px;
+
+}
+
+img#cake {
+    padding-left: 100px;
+    padding-right: 100px;
 }
