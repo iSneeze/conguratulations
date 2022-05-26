@@ -1,0 +1,11 @@
+#releaseEbis {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid brown;
+    background-color: #ff6300;
+    color: white;
+    font-size: large;
+    padding: 16px 32px;
+    border-radius: 12px 12px 12px 12px;
+    text-align: center;
+    display: inline-block;
+}
