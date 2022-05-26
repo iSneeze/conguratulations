@@ -1,7 +1,6 @@
-let running = false;
-let canvas;
-let ctx;
 const shrimpDimensions = 50; //px
+
+/// Canvas
 
 function createCanvas() { // creates a canvas
     let canvas = document.createElement("canvas");
@@ -19,11 +18,7 @@ function sizeCanvas() {                  // resizes canvas. Will create a canvas
     canvas.height = window.innerHeight;
 }
 
-
-// the resize listener
-window.addEventListener("resize", sizeCanvas);
-// call sizeCanvas to create and set the canvas resolution
-sizeCanvas();
+/// Vector and Ebi class containing the simulation logic
 
 class Vector {
     constructor(x, y) {
@@ -92,13 +87,18 @@ class Ebi {
     }
 
     update() {
+        // let acceleration always point to the mouse cursor.
         this.acceleration = mousePos.sub(this.coords).normal.scale(0.3);
+        // every frame the acceleration gets added to the velocity, and scaled by a friction factor
         this.velocity = this.velocity.scale(0.997).add(this.acceleration);
+        // update the position depending on the velocity
         this.coords = this.coords.add(this.velocity);
+        // let the ebi look in the direction its moving
         this.rotation = Math.atan2(this.coords.deltaY(mousePos), this.coords.deltaX(mousePos));
     }
 
     draw() {
+        // weird canvas drawing stuff
         ctx.translate(this.coords.x, this.coords.y);
         ctx.rotate(this.rotationInRads);
         ctx.drawImage(this.image, -shrimpDimensions / 2, -shrimpDimensions / 2, shrimpDimensions, shrimpDimensions);
@@ -108,8 +108,17 @@ class Ebi {
     }
 }
 
-let mousePos = new Vector(0, 0);
+// Setup and update
 
+let running = false;
+let canvas;
+let ctx;
+// the resize listener
+window.addEventListener("resize", sizeCanvas);
+// call sizeCanvas to create and set the canvas resolution
+sizeCanvas();
+
+let mousePos = new Vector(0, 0);
 let ebis = [];
 document.addEventListener("mousemove", (e) => {
     mousePos.setCoords(e.clientX, e.clientY);
@@ -162,6 +171,8 @@ function toggleSideNavEbis() {
     }
 
 }
+
+// Button click handler
 
 function releaseTheEbis() {
     if (!running) {
