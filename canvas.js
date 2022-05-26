@@ -165,10 +165,12 @@ function toggleSideNavEbis() {
 
 function releaseTheEbis() {
     if (!running) {
+        document.getElementById("releaseEbis").textContent = "OH NYO, GO BACK!";
         setupEbis();
         running = true;
         requestAnimationFrame(update);
     } else {
+        document.getElementById("releaseEbis").textContent = "RELEASE THE EBIS";
         running = false;
     }
     toggleSideNavEbis();
