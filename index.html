@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="pages/umbrella/page.css" />
     <link rel="stylesheet" href="pages/sneeze/page.css" />
     <link rel="icon" href="/assets/images/guraPat.png" type="image/png" />
     <link href="pages/iSneeze.html" rel="import" />
@@ -26,8 +27,11 @@
                     src="assets/images/shrimps/shrimpTemplate.png"><span>many</span></a>
             <a class="shrimp" href="#shrimp3"><img class="shrimp"
                     src="assets/images/shrimps/shrimpTemplate.png"><span>Shrimps</span></a>
-            <a class="shrimp" href="#shrimp4"><img class="shrimp"
-                    src="assets/images/shrimps/shrimpTemplate.png"><span>here</span></a>
+            <a class="shrimp" href="#umbrella" title="my full name is too long"
+                onclick="document.getElementById('kasa-ni-ataru-ame').play()">
+                <img class="shrimp black-rain" src="assets/images/shrimps/umbrella.png">
+                <span>Umbrella</span>
+            </a>
             <a class="shrimp" href="#shrimp5" onclick="sharkGoesA()"><img class="shrimp"
                     src="assets/images/shrimps/ebiSneeze.png"><span>iSneeze</span></a>
         </div>
@@ -115,15 +119,17 @@
                     onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
             </div>
         </div>
-        <div id="shrimp4">
+        <div id="umbrella">
             <div class="banner">
-                <div class="content">
-                    <img class="shrimp" src="assets/images/shrimps/shrimpTemplate.png">
-                    <span> Shrimpy name 4</span>
+                <div class="content black-rain">
+                    <img class="shrimp"
+                        src="assets/images/shrimps/umbrella.png"
+                        title="im actually the umbrella; the ebi is my host">
+                    <span>ForgottenUmbrella</span>
                 </div>
             </div>
             <div class="page flexSneeze">
-                <iframe src="./pages/placeholder/page.html"
+                <iframe src="./pages/umbrella/page.html" allow="autoplay"
                     onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
             </div>
         </div>
