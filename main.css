@@ -84,6 +84,7 @@ body {
 
 .wacky-font {
     font-family: "Comic Shark";
+    
 }
 
 /* Sidenav Shrimps */
@@ -172,7 +173,7 @@ a.shrimp:hover {
 }
 
 #postcard {
-    margin-top: 20px;
+    margin-top: 2px;
 }
 
 img.shrimpD {
@@ -183,6 +184,7 @@ img.shrimpD {
     border-width: 4px;
 
 }
+
 
 img#cake {
     padding-left: 100px;
