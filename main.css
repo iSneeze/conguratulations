@@ -48,19 +48,33 @@ body {
 }
 
 .page {
+    /* Flex */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 32px;
+
+    /* Background */
     background-color: #FFFCFC;
     min-height: 500px;
     font-size: 24px;
     text-align: center;
-    padding: 64px 32px 64px 32px;
+    padding: 16px;
     border-radius: 40px;
-    border: 20px solid;
+    border: 15px solid;
     border-image: url("https://isneeze.github.io/conguratulations/assets/images/guraScheduleBorder.svg");
     border-image-slice: 30%;
     border-image-width: 5;
     border-image-repeat: stretch;
     border-image-outset: 0.8;
     margin-right: 16px;
+    margin-bottom: 48px;
+}
+
+.mainpage .page {
+    flex-direction: column;
 }
 
 #IntroText {
@@ -160,20 +174,30 @@ a.shrimp:hover {
 .banner {
     display: flex;
     justify-content: center;
+    align-self: flex-start;
+
+    /* Border */
+    border: 15px solid;
+    background-color: #4B87A9;
+    border-radius: 35px;
+    border-image: url("https://isneeze.github.io/conguratulations/assets/images/guraScheduleBorderAccent.svg");
+    border-image-slice: 30%;
+    border-image-width: 5;
+    border-image-repeat: stretch;
+    border-image-outset: 0.8;
+    width: 220px;
 }
 
-.banner .content {
+.banner .content span {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     gap: 8px;
-    background-color: #ffffff;
-    margin-top: 64px;
-    padding: 24px;
-    /* TODO: idk change this to look good */
-    border-top-left-radius: 69px;
-    border-top-right-radius: 69px;
+    background-color: #ffffffc4;
+    padding: 5px 10px;
+    border-radius: 5px;
+
 }
 
 .banner img.shrimp {
@@ -185,6 +209,10 @@ a.shrimp:hover {
     border-radius: 0px;
     background-color: transparent;
     object-fit: contain;
+}
+
+.main {
+    flex-grow: 5;
 }
 
 #postcard {
@@ -215,4 +243,5 @@ img#cake {
     left: 0;
     overflow-x: hidden;
     pointer-events: none;
+    touch-action: none;
 }
