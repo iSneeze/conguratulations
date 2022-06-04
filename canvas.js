@@ -1,4 +1,4 @@
-const shrimpDimensions = 50; //px
+const shrimpDimensions = 75; //px
 
 /// Canvas
 
@@ -77,20 +77,23 @@ class Ebi {
         this.coords = new Vector(posX, posY);
         this.image = new Image(shrimpDimensions, shrimpDimensions);
         this.image.src = imageAssetUrl;
-        this.velocity = new Vector(0, 0);
+        this.velocity = new Vector(
+            //random start velocity
+            (Math.random() - 0.5) * 10,
+            (Math.random() - 0.5) * 10
+        );
         this.acceleration = new Vector(0, 0);
-        this.mass = 1;
     }
 
     get rotationInRads() {
-        return Math.atan2(this.velocity.x, this.velocity.y);
+        return Math.atan2(this.velocity.x, this.velocity.y) + Math.PI;
     }
 
     update() {
         // let acceleration always point to the mouse cursor.
         this.acceleration = mousePos.sub(this.coords).normal.scale(0.3);
         // every frame the acceleration gets added to the velocity, and scaled by a friction factor
-        this.velocity = this.velocity.scale(0.997).add(this.acceleration);
+        this.velocity = this.velocity.scale(0.9965).add(this.acceleration);
         // update the position depending on the velocity
         this.coords = this.coords.add(this.velocity);
         // let the ebi look in the direction its moving

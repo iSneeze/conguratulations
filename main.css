@@ -5,7 +5,7 @@ body {
 
 .sidenav {
     height: 100%;
-    width: 200px;
+    width: 250px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -29,7 +29,7 @@ body {
     padding: 6px 8px 6px 8px;
     text-decoration: none;
     /* We need to find a better way to handle long names. */
-    font-size: 20px;
+    font-size: 18px;
     color: #0f1849;
 }
 
@@ -39,7 +39,7 @@ body {
 }
 
 .mainpage {
-    margin-left: 200px;
+    margin-left: 250px;
     /* Same as the width of the sidenav */
     font-size: 28px;
     background-color: transparent;
@@ -106,7 +106,7 @@ a.shrimp {
     justify-content: start;
     align-items: center;
     text-align: start;
-    width: 160px;
+    width: 220px;
     height: 50px;
     border-radius: 31px;
     border-width: 4px;
