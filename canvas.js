@@ -86,7 +86,7 @@ class Ebi {
     }
 
     get rotationInRads() {
-        return Math.atan2(this.velocity.x, this.velocity.y) + Math.PI;
+        return Math.atan2(this.velocity.x, this.velocity.y);
     }
 
     update() {

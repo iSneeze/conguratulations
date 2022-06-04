@@ -39,6 +39,7 @@ body {
 }
 
 .mainpage {
+    margin-top: 32px;
     margin-left: 250px;
     /* Same as the width of the sidenav */
     font-size: 28px;
@@ -46,11 +47,19 @@ body {
 }
 
 .page {
-    background-color: #CBF3F6;
+    background-color: #FFFCFC;
+    min-height: 500px;
     font-size: 24px;
     text-align: center;
     padding: 64px 32px 64px 32px;
-    border-radius: 24px;
+    border-radius: 40px;
+    border: 20px solid;
+    border-image: url(/assets/images/guraScheduleBorder.svg);
+    border-image-slice: 30%;
+    border-image-width: 5;
+    border-image-repeat: stretch;
+    border-image-outset: 0.8;
+    margin-right: 16px;
 }
 
 #IntroText {
@@ -84,7 +93,7 @@ body {
 
 .wacky-font {
     font-family: "Comic Shark";
-    
+
 }
 
 /* Sidenav Shrimps */
@@ -107,11 +116,16 @@ a.shrimp {
     justify-content: start;
     align-items: center;
     text-align: start;
-    width: 220px;
+    width: 200px;
     height: 50px;
+    border: 4px solid;
     border-radius: 31px;
-    border-width: 4px;
-    background-color: aliceblue;
+    border-image: url(/assets/images/guraScheduleBorder.svg);
+    border-image-slice: 23;
+    border-image-width: 8;
+    border-image-outset: 0.5;
+    border-image-repeat: stretch;
+    background-color: #FFFCFC;
     transition-duration: 0.2s;
     transition-timing-function: ease-in;
     transition-delay: 0s;
