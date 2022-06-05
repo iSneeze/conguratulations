@@ -21,11 +21,11 @@
     <div class="sidenav">
         <div class="flexnav">
             <a class="home" href="#home">Home</a>
-            <a class="shrimp" href="#shrimp1"><img id="ebichan" class="shrimp"
-                    src="assets/images/shrimps/shrimpTemplate.png"><span>YOUR name here! :D</span></a>
+            <a class="shrimp" href="#byakko"><img id="ebichan" class="shrimp"
+                    src="assets/images/shrimps/ebiByakko.png"><span>Byakko</span></a>
             <a class="shrimp" href="#shrimp2"><img class="shrimp"
                     src="assets/images/shrimps/shrimpTemplate.png"><span>YOUR name here! :D</span></a>
-            <a class="shrimp" href="#shrimp3"><img class="shrimp"
+            <a class="shrimp" href="#cordies"><img class="shrimp"
                     src="assets/images/shrimps/shrimpTemplate.png"><span>Cordies Die</span></a>
             <a class="shrimp" href="#umbrella" title="my full name is too long"
                 onclick="document.getElementById('kasa-ni-ataru-ame').play()">
@@ -69,16 +69,16 @@
         </div>
 
         <!-- pretty hacky but one way to structure multiple files is to have an iframe copy its content and then remove itself. lol.-->
-        <!-- Some Lucky Shrimpy -->
-        <div id="shrimp1">
+        <!-- Byakko -->
+        <div id="byakko">
             <div class="page">
                 <div class="banner">
                     <div class="content">
-                        <img class="shrimp" src="assets/images/shrimps/shrimpTemplate.png">
-                        <span> Shrimpy name 1</span>
+                        <img class="shrimp" src="assets/images/shrimps/ebiByakko.png">
+                        <span>Byakko</span>
                     </div>
                 </div>
-                <iframe src="./pages/placeholder/page.html"
+                <iframe src="./pages/byakko/page.html"
                     onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
             </div>
         </div>
@@ -96,7 +96,7 @@
             </div>
         </div>
         <!-- Cordis -->
-        <div id="shrimp3">
+        <div id="cordies">
             <div class="page">
                 <div class="banner">
                     <div class="content">
@@ -136,8 +136,6 @@
             </div>
         </div>
     </div>
-
-
 </body>
 
 </html>
