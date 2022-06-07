@@ -54,7 +54,7 @@ body {
     align-items: center;
     align-content: center;
     justify-content: center;
-    gap: 32px;
+    gap: 16px;
 
     /* Background */
     background-color: #FFFCFC;
@@ -78,7 +78,6 @@ body {
 }
 
 #IntroText {
-
     background-color: #A8BDCD;
     border: dotted;
     border-width: 3px;
@@ -246,19 +245,26 @@ img#cake {
     touch-action: none;
 }
 
-span.emoji{
+span.emoji {
     width: 32px;
     height: 32px;
     display: inline-block;
 
 }
 
-span.emoji.gurapat{
+span.emoji.gurapat {
     background-image: url("https://yt3.ggpht.com/uKixUjXa26VwrLMqbK3UE0-oUY5RqJjrqvawfb7T_WNyGIz5LUU-qNQnhlBtk1324X1ZCBpE=h32-k-nd");
-
 }
 
-span.emoji.gurasalman{
+span.emoji.gurasalman {
     background-image: url("https://yt3.ggpht.com/4urX_2Lgswod7tqfff9eVZXxm4gbe6dV8fqqVHnHnPit0vW12Bwf-OCFH5eprrxJ-9Gvk63_bHM=h32-k-nd");
+}
 
+span.emoji.guralove {
+    background-image: url("https://yt3.ggpht.com/f47Y9hYoqcyLM4jjcfHaPIQ7uebX__F3RYQeNouKZCI-sAfyC7JHWkCwIki6DYK0A-9m8KPM4SM=w32-h32-c-k-nd");
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
 }

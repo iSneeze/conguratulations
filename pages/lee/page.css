@@ -1,0 +1,42 @@
+#guraEbi {
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+
+}
+
+.g11 {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 4px;
+}
+
+.g12 {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 4px;
+}
+
+.g13 {
+    grid-column: 1;
+    grid-row: 3;
+    margin: 4px;
+}
+
+.g31 {
+    grid-column: 3;
+    grid-row: 1;
+    margin: 4px;
+}
+
+.g32 {
+    grid-column: 3;
+    grid-row: 2;
+    margin: 4px;
+}
+
+.g33 {
+    grid-column: 3;
+    grid-row: 3;
+    margin: 4px;
+}
