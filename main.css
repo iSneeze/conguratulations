@@ -29,7 +29,6 @@ body {
 .sidenav a {
     padding: 6px 8px 6px 8px;
     text-decoration: none;
-    /* We need to find a better way to handle long names. */
     font-size: 18px;
     color: #0f1849;
 }
@@ -95,6 +94,13 @@ body {
 
     .sidenav a {
         font-size: 18px;
+    }
+}
+
+/* Reduce font size on Firefox since it renders text with greater width. */
+@-moz-document url-prefix() {
+    .sidenav a {
+        font-size: 16px;
     }
 }
 
