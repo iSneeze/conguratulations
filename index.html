@@ -30,9 +30,10 @@
                     src="assets/images/shrimps/shrimpTemplate.png"><span>YOUR name here! :D</span></a>
             <a class="shrimp" href="#cordies"><img class="shrimp" src="assets/images/shrimps/Cordis.png"><span>Cordies
                     Die</span></a>
-            <a class="shrimp" href="#umbrella" title="my full name is too long"
+            <a class="shrimp wsrgs-animated-on-hover" href="#umbrella"
                 onclick="document.getElementById('kasa-ni-ataru-ame').play()">
-                <img class="shrimp black-rain" src="assets/images/shrimps/umbrella.png">
+                <img class="shrimp wsrgs-black-rain"
+                    src="assets/images/shrimps/umbrella.png">
                 <span>ForgottenUmbrella</span>
             </a>
             <a class="shrimp" href="#shrimp5" onclick="sharkGoesA()"><img class="shrimp"
@@ -132,14 +133,34 @@
         <div id="umbrella">
             <div class="page">
                 <div class="banner">
-                    <div class="content black-rain">
-                        <img class="shrimp" src="assets/images/shrimps/umbrella.png"
+                    <div class="content">
+                        <img class="shrimp rain wsrgs-animated" src="assets/images/shrimps/umbrella.png"
                             title="im actually the umbrella; the ebi is my host">
                         <span>ForgottenUmbrella</span>
                     </div>
                 </div>
                 <iframe src="./pages/umbrella/page.html" allow="autoplay"
                     onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+                <p>
+                    <!-- The iframe hack doesn't play nicely with events, so I
+                    need to place the audio tag outside it for my script to
+                    work. -->
+                    <audio id="kasa-ni-ataru-ame" class="wsrgs-shadow" controls
+                        loop title="sound of rain hitting an umbrella, courtesy of SPANAC at https://www.freesoundslibrary.com/rain-falling-on-umbrella-loop/ under CC BY 4.0">
+                        <source src="https://www.freesoundslibrary.com/wp-content/uploads/2017/12/rain-falling-on-umbrella-loop.mp3"
+                            type="audio/mpeg"/>
+                        Your browser doesn't support HTML5 audio. Please conjure
+                        <a href="https://www.freesoundslibrary.com/wp-content/uploads/2017/12/rain-falling-on-umbrella-loop.mp3">
+                            the sound of rain hitting an umbrella
+                        </a>
+                        with your imagination instead while you go update your browser.
+                    </audio>
+                </p>
+                <!-- I think modules are a pretty cool feature. Eh avoids naem
+                collisions and doesnt afraid of anything. -->
+                <!-- I'd put this script tag in my HTML file but the iframe
+                hack doesn't play nicely with requestAnimationFrame either. -->
+                <script type="module" src="/pages/umbrella/page.js"></script>
             </div>
         </div>
         <!-- Sneeze -->

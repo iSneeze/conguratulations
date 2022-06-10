@@ -23,7 +23,7 @@ SOFTWARE.
 /* .rain { */
 /*     /\* height: 100vh; *\/ */
 /*     background-image: url(https://i.postimg.cc/MKgprHJg/rain.png); */
-/*     animation: rain 0.3s linear infinite; */
+/*     /\* animation: rain 0.3s linear infinite; *\/ */
 /* } */
 
 @keyframes rain {
@@ -33,11 +33,32 @@ SOFTWARE.
 
 /* End copyrighted content. */
 
-.black-rain {
-    background-image: url(../../assets/images/black-rain.png);
+/* Namespaces r kool!!! */
+.wsrgs-black-rain {
+    background-image: url(/pages/umbrella/black-rain.png);
+}
+
+.wsrgs-animated, .wsrgs-animated-on-hover:hover > img {
     animation: rain 0.4s linear infinite;
 }
 
-img#kasa-no-neko {
+#kasa-no-neko {
     max-height: 300px;
+    max-width: 100%;
+}
+
+.wsrgs-shadow {
+    filter: drop-shadow(0 0 5px grey);
+}
+
+#kasa-kanvas-kontainer {
+    position: relative;
+    width: 100%;
+}
+
+#kasa-no-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
 }
