@@ -131,7 +131,7 @@
         </div>
         <!-- Umbrella -->
         <div id="umbrella">
-            <div class="page">
+            <div id="kasa-kanvas-kontainer" class="page">
                 <div class="banner">
                     <div class="content">
                         <img class="shrimp rain wsrgs-animated" src="assets/images/shrimps/umbrella.png"
@@ -141,25 +141,30 @@
                 </div>
                 <iframe src="./pages/umbrella/page.html" allow="autoplay"
                     onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
-                <p>
-                    <!-- The iframe hack doesn't play nicely with events, so I
-                    need to place the audio tag outside it for my script to
-                    work. -->
+                <!-- The iframe hack doesn't play nicely with events on Chrome,
+                    so I need to place the audio tag outside it for my script
+                    to work. -->
+                <figure>
                     <audio id="kasa-ni-ataru-ame" class="wsrgs-shadow" controls
-                        loop title="sound of rain hitting an umbrella, courtesy of SPANAC at https://www.freesoundslibrary.com/rain-falling-on-umbrella-loop/ under CC BY 4.0">
+                        loop title="sound of rain hitting an umbrella">
                         <source src="https://www.freesoundslibrary.com/wp-content/uploads/2017/12/rain-falling-on-umbrella-loop.mp3"
                             type="audio/mpeg"/>
                         Your browser doesn't support HTML5 audio. Please conjure
                         <a href="https://www.freesoundslibrary.com/wp-content/uploads/2017/12/rain-falling-on-umbrella-loop.mp3">
-                            the sound of rain hitting an umbrella
-                        </a>
-                        with your imagination instead while you go update your browser.
+                        the sound of rain hitting an umbrella</a> with your
+                        imagination instead while you go update your browser.
                     </audio>
-                </p>
+                    <figcaption>
+                        (Sound by <a href="https://www.freesoundslibrary.com/rain-falling-on-umbrella-loop/">
+                        SPANAC</a> licensed under <a href="https://creativecommons.org/licenses/by/4.0/">
+                        CC BY 4.0</a>)
+                    </figcaption>
+                </figure>
                 <!-- I think modules are a pretty cool feature. Eh avoids naem
-                collisions and doesnt afraid of anything. -->
+                    collisions and doesnt afraid of anything. -->
                 <!-- I'd put this script tag in my HTML file but the iframe
-                hack doesn't play nicely with requestAnimationFrame either. -->
+                    hack doesn't play nicely with requestAnimationFrame either.
+                    -->
                 <script type="module" src="pages/umbrella/page.js"></script>
             </div>
         </div>

@@ -42,8 +42,8 @@ SOFTWARE.
     animation: rain 0.4s linear infinite;
 }
 
-#kasa-no-neko {
-    max-height: 300px;
+#umbrella .main > img {
+    width: 400px;
     max-width: 100%;
 }
 
@@ -53,7 +53,6 @@ SOFTWARE.
 
 #kasa-kanvas-kontainer {
     position: relative;
-    width: 100%;
 }
 
 #kasa-no-canvas {
@@ -61,4 +60,8 @@ SOFTWARE.
     top: 0;
     left: 0;
     pointer-events: none;
+}
+
+#umbrella figcaption {
+    font-size: small;
 }
