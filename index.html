@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="pages/chia/page.css" />
     <link rel="stylesheet" href="pages/lee/page.css" />
     <link rel="stylesheet" href="pages/umbrella/page.css" />
     <link rel="stylesheet" href="pages/sneeze/page.css" />
@@ -22,8 +23,10 @@
     <div class="sidenav">
         <div class="flexnav">
             <a class="home" href="#home">Home</a>
-            <a class="shrimp" href="#byakko"><img id="ebichan" class="shrimp"
+            <a class="shrimp" href="#byakko"><img class="shrimp"
                     src="assets/images/shrimps/ebiByakko.png"><span>Byakko</span></a>
+            <a class="shrimp" href="#chia"><img class="shrimp"
+                    src="assets/images/shrimps/ebiChia.png"><span>TheChiaGod</span></a>
             <a class="shrimp" href="#leebutgawr"><img class="shrimp"
                     src="assets/images/shrimps/ebiLee.png"><span>LeeButGawr</span></a>
             <a class="shrimp" href="#shrimp2"><img class="shrimp"
@@ -32,8 +35,7 @@
                     Die</span></a>
             <a class="shrimp wsrgs-animated-on-hover" href="#umbrella"
                 onclick="document.getElementById('kasa-ni-ataru-ame').play()">
-                <img class="shrimp wsrgs-black-rain"
-                    src="assets/images/shrimps/umbrella.png">
+                <img class="shrimp wsrgs-black-rain" src="assets/images/shrimps/umbrella.png">
                 <span>ForgottenUmbrella</span>
             </a>
             <a class="shrimp" href="#shrimp5" onclick="sharkGoesA()"><img class="shrimp"
@@ -43,7 +45,7 @@
 
     <!-- Page content -->
     <div class="mainpage" id="home">
-        <div class="page" id="postcard">
+        <div class="page frontpage" id="postcard">
             <span class="wacky-font"> <img style="height: 200px;" src="assets/gifs/HBDG1.gif"> </span>
             <div id="IntroText">
 
@@ -80,7 +82,7 @@
         <!-- Byakko -->
         <div id="byakko">
             <div class="page">
-                <div class="banner">
+                <div class="banner bannerpink">
                     <div class="content">
                         <img class="shrimp" src="assets/images/shrimps/ebiByakko.png">
                         <span>Byakko</span>
@@ -90,10 +92,23 @@
                     onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
             </div>
         </div>
+        <!-- Chia -->
+        <div id="chia">
+            <div class="page">
+                <div class="banner">
+                    <div class="content">
+                        <img class="shrimp" src="assets/images/shrimps/ebiChia.png">
+                        <span>TheChiaGod</span>
+                    </div>
+                </div>
+                <iframe src="./pages/chia/page.html"
+                    onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+            </div>
+        </div>
         <!-- Lee -->
         <div id="leebutgawr">
             <div class="page">
-                <div class="banner">
+                <div class="banner bannerpink">
                     <div class="content">
                         <img class="shrimp" src="assets/images/shrimps/ebiLee.png">
                         <span>LeeButGawr</span>
@@ -132,7 +147,7 @@
         <!-- Umbrella -->
         <div id="umbrella">
             <div id="kasa-kanvas-kontainer" class="page">
-                <div class="banner">
+                <div class="banner bannerpink">
                     <div class="content">
                         <img class="shrimp rain wsrgs-animated" src="assets/images/shrimps/umbrella.png"
                             title="im actually the umbrella; the ebi is my host">
@@ -145,19 +160,21 @@
                     so I need to place the audio tag outside it for my script
                     to work. -->
                 <figure>
-                    <audio id="kasa-ni-ataru-ame" class="wsrgs-shadow" controls
-                        loop title="sound of rain hitting an umbrella">
-                        <source src="https://www.freesoundslibrary.com/wp-content/uploads/2017/12/rain-falling-on-umbrella-loop.mp3"
-                            type="audio/mpeg"/>
+                    <audio id="kasa-ni-ataru-ame" class="wsrgs-shadow" controls loop
+                        title="sound of rain hitting an umbrella">
+                        <source
+                            src="https://www.freesoundslibrary.com/wp-content/uploads/2017/12/rain-falling-on-umbrella-loop.mp3"
+                            type="audio/mpeg" />
                         Your browser doesn't support HTML5 audio. Please conjure
-                        <a href="https://www.freesoundslibrary.com/wp-content/uploads/2017/12/rain-falling-on-umbrella-loop.mp3">
-                        the sound of rain hitting an umbrella</a> with your
+                        <a
+                            href="https://www.freesoundslibrary.com/wp-content/uploads/2017/12/rain-falling-on-umbrella-loop.mp3">
+                            the sound of rain hitting an umbrella</a> with your
                         imagination instead while you go update your browser.
                     </audio>
                     <figcaption>
                         (Sound by <a href="https://www.freesoundslibrary.com/rain-falling-on-umbrella-loop/">
-                        SPANAC</a> licensed under <a href="https://creativecommons.org/licenses/by/4.0/">
-                        CC BY 4.0</a>)
+                            SPANAC</a> licensed under <a href="https://creativecommons.org/licenses/by/4.0/">
+                            CC BY 4.0</a>)
                     </figcaption>
                 </figure>
                 <!-- I think modules are a pretty cool feature. Eh avoids naem

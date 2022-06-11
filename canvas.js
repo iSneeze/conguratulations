@@ -136,7 +136,7 @@ function update() {
     if (running) {
         setTimeout(() => {
             requestAnimationFrame(update);
-        }, 1000 / 75);
+        }, 1000 / 90);
 
     } else {
         ctx.clearRect(0, 0, canvas.width, canvas.height);

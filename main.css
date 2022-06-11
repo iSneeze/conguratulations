@@ -40,10 +40,14 @@ body {
 
 .mainpage {
     margin-top: 32px;
-    margin-left: 250px;
+    margin-left: 320px;
     /* Same as the width of the sidenav */
     font-size: 28px;
     background-color: transparent;
+}
+
+.frontpage.page {
+    flex-direction: column;
 }
 
 .page {
@@ -53,7 +57,7 @@ body {
     align-items: center;
     align-content: center;
     justify-content: center;
-    gap: 16px;
+
 
     /* Background */
     background-color: #FFFCFC;
@@ -61,19 +65,19 @@ body {
     font-size: 24px;
     text-align: center;
     padding: 16px;
-    border-radius: 40px;
-    border: 15px solid;
-    border-image: url("https://isneeze.github.io/conguratulations/assets/images/guraScheduleBorder.svg");
-    border-image-slice: 30%;
-    border-image-width: 5;
-    border-image-repeat: stretch;
-    border-image-outset: 0.8;
+    border-radius: 20px;
+    border: 15px solid #aaaaaa;
+    border-image: url(assets/images/borders/whiteborder.svg);
+    border-image-slice: 8;
+    border-image-outset: 0.5;
     margin-right: 16px;
     margin-bottom: 48px;
 }
 
-.mainpage .page {
-    flex-direction: column;
+.page p {
+    margin: 0px;
+    margin-bottom: 20px;
+
 }
 
 #IntroText {
@@ -104,18 +108,6 @@ body {
     }
 }
 
-@font-face {
-    font-family: 'Comic Shark';
-    /*a name to be used later*/
-    src: url("https://isneeze.github.io/conguratulations/assets/fonts/Comic Shark.ttf");
-    /*URL to font*/
-}
-
-.wacky-font {
-    font-family: "Comic Shark";
-
-}
-
 /* Sidenav Shrimps */
 img.shrimp {
     width: 50px;
@@ -139,10 +131,10 @@ a.shrimp {
     width: 200px;
     height: 50px;
     border: 4px solid;
-    border-radius: 31px;
-    border-image: url("https://isneeze.github.io/conguratulations/assets/images/guraScheduleBorder.svg");
-    border-image-slice: 23;
-    border-image-width: 8;
+    border-radius: 10px;
+    border-image: url(assets/images/borders/whiteborder.svg);
+    border-image-slice: 8;
+    border-image-width: 2;
     border-image-outset: 0.5;
     border-image-repeat: stretch;
     background-color: #FFFCFC;
@@ -177,20 +169,28 @@ a.shrimp:hover {
 }
 
 .banner {
+    position: relative;
+    z-index: 3;
+    left: -100px;
     display: flex;
     justify-content: center;
     align-self: flex-start;
 
     /* Border */
     border: 15px solid;
-    background-color: #4B87A9;
-    border-radius: 35px;
-    border-image: url("https://isneeze.github.io/conguratulations/assets/images/guraScheduleBorderAccent.svg");
-    border-image-slice: 30%;
-    border-image-width: 5;
-    border-image-repeat: stretch;
-    border-image-outset: 0.8;
+    background-color: #418f98;
+    border-image: url(assets/images/borders/darkgreenborder.svg);
+    border-image-slice: 8;
+    border-image-outset: 0.5;
     width: 220px;
+}
+
+.bannerpink {
+    border: 15px solid;
+    background-color: #efd0e9ff;
+    border-image: url(assets/images/borders/pinkborder.svg);
+    border-image-slice: 8;
+    border-image-outset: 0.5;
 }
 
 .banner .content span {
@@ -208,7 +208,7 @@ a.shrimp:hover {
 .banner img.shrimp {
     width: auto;
     height: auto;
-    max-width: 100px;
+    max-width: 120px;
     max-height: 100px;
     padding: 0px;
     border-radius: 0px;
@@ -217,7 +217,12 @@ a.shrimp:hover {
 }
 
 .main {
+    flex-direction: column;
     flex-grow: 5;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 #postcard {
@@ -272,5 +277,5 @@ span.emoji.guralove {
 
 .gridContainer {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 40px 500px 40px;
 }
