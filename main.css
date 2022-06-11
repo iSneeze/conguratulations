@@ -275,6 +275,14 @@ span.emoji.guralove {
     background-image: url("https://yt3.ggpht.com/f47Y9hYoqcyLM4jjcfHaPIQ7uebX__F3RYQeNouKZCI-sAfyC7JHWkCwIki6DYK0A-9m8KPM4SM=w32-h32-c-k-nd");
 }
 
+span.emoji.guraebi {
+    background-image: url("https://yt3.ggpht.com/lLosWXM-eX6NCKDrrAanvFljB3A68FuN-YMq8NE0z-CJPL003waW2hpMbXy_wg8YZHAOglTv=w32-h32-c-k-nd");
+}
+
+span.emoji.gurawow {
+    background-image: url("https://yt3.ggpht.com/82joi01FZkAj5IEPXjLuPY_nJx-vji0CIuLMfN9iqP7IoLY3fzo1rVYtKcp41V5Si9tdX15xlQ=w32-h32-c-k-nd");
+}
+
 .gridContainer {
     display: grid;
     grid-template-columns: 40px 500px 40px;
