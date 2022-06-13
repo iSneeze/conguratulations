@@ -3,8 +3,8 @@ const GREY = 128 + 64 + 32;
 const MAX_FADE = 1024;
 const MAX_RADIUS = 4;
 const NUM_DROPS = 64;
-const RADIUS_GROWTH = 1/64;
-const RAINFALL_GROWTH = 1/128;
+const RADIUS_GROWTH = 1 / 64;
+const RAINFALL_GROWTH = 1 / 128;
 
 class RainAnimation {
     constructor() {
