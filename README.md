@@ -12,4 +12,4 @@ For extension recommendations see 'extensions.json'
 
 You can also just contribute content you want on your page, simply message me. As seen in the demo, you can add text, images, audio or youtube videos.
 
-The current master branch can be viewed at: https://isneeze.github.io/conguratulations/
+The current master branch can be viewed at: https://fromchumbieswithlove.com
