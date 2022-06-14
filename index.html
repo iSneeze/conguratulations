@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link preview -->
-    <meta property="og:image" content="assets/images/cake3_preview.png" />
+    <meta property="og:image" content="https://fromchumbieswithlove.com/assets/images/cake3_preview.png" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://fromchumbieswithlove.com/" />
     <meta property="og:title" content="Happy Birthday Gura!" />
@@ -30,6 +30,8 @@
     <div class="sidenav">
         <div class="flexnav">
             <a class="home" href="#home">Home</a>
+            <a class="shrimp" href="#bjoarn"><img class="shrimp"
+                src="assets/images/shrimps/ebiBjoarn.png"><span>Bjoarn</span></a>
             <a class="shrimp" href="#nootnoot"><img class="shrimp"
                     src="assets/images/shrimps/ebiNootNoot.png"><span>Noot Noot</span></a>
             <a class="shrimp" href="#byakko"><img class="shrimp"
@@ -83,7 +85,20 @@
             </div>
         </div>
 
-        <!-- pretty hacky but one way to structure multiple files is to have an iframe copy its content and then remove itself. lol.-->
+        <!-- pretty hacky but one way to structure multiple files is to have an iframe copy its content and then remove itself. lol.-->        
+        <!-- Bjoarn -->
+        <div id="bjoarn">
+            <div class="page">
+                <div class="banner bannerpink">
+                    <div class="content">
+                        <img class="shrimp" src="assets/images/shrimps/ebiBjoarn.png">
+                        <span>Atlantean Guard Bjoarn</span>
+                    </div>
+                </div>
+                <iframe src="./pages/bjoarn/page.html"
+                    onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+            </div>
+        </div>
         <!-- Noot Noot -->
         <div id="nootnoot">
             <div class="page">
