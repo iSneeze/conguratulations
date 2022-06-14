@@ -291,3 +291,8 @@ span.emoji.gurawow {
     display: grid;
     grid-template-columns: 40px 500px 40px;
 }
+
+.citation {
+    text-align: end;
+    padding-right: 64px;
+}
