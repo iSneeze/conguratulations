@@ -97,7 +97,7 @@ class Ebi {
         // update the position depending on the velocity
         this.coords = this.coords.add(this.velocity);
         // let the ebi look in the direction its moving
-        this.rotation = Math.atan2(this.coords.deltaY(mousePos), this.coords.deltaX(mousePos));
+        this.rotation = Math.atan2(this.velocity.y, this.velocity.x) - Math.PI;
     }
 
     draw() {
