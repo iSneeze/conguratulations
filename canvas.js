@@ -79,14 +79,10 @@ class Ebi {
         this.image.src = imageAssetUrl;
         this.velocity = new Vector(
             //random start velocity
-            (Math.random() - 0.5) * 10,
-            (Math.random() - 0.5) * 10
+            (Math.random() - 0.5) * 5,
+            (Math.random() - 0.5) * 5
         );
         this.acceleration = new Vector(0, 0);
-    }
-
-    get rotationInRads() {
-        return Math.atan2(this.velocity.x, this.velocity.y);
     }
 
     update() {
@@ -96,17 +92,19 @@ class Ebi {
         this.velocity = this.velocity.scale(0.9965).add(this.acceleration);
         // update the position depending on the velocity
         this.coords = this.coords.add(this.velocity);
-        // let the ebi look in the direction its moving
         this.rotation = Math.atan2(this.velocity.y, this.velocity.x) - Math.PI;
     }
 
     draw() {
         // weird canvas drawing stuff
+        ctx.save();
         ctx.translate(this.coords.x, this.coords.y);
-        ctx.rotate(this.rotationInRads);
+        ctx.rotate(this.rotation);
         ctx.drawImage(this.image, -shrimpDimensions / 2, -shrimpDimensions / 2, shrimpDimensions, shrimpDimensions);
-        ctx.rotate(-this.rotationInRads);
-        ctx.translate(-this.coords.x, -this.coords.y);
+        ctx.restore();
+
+        // ctx.rotate(-this.rotationInRads);
+        // ctx.translate(-this.coords.x, -this.coords.y);
 
     }
 }

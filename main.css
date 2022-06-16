@@ -60,7 +60,7 @@ body {
 
 
     /* Background */
-    background-color: #FFFCFC;
+    background-color: #FFFFFF;
     min-height: 500px;
     font-size: 24px;
     text-align: center;
@@ -75,9 +75,8 @@ body {
 }
 
 .page p {
-    margin: 0px;
-    margin-bottom: 20px;
-
+    margin: 10px 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #IntroText {
@@ -106,6 +105,10 @@ body {
     .sidenav a {
         font-size: 16px;
     }
+}
+
+br {
+    margin: 20px;
 }
 
 /* Sidenav Shrimps */
@@ -285,6 +288,10 @@ span.emoji.guraebi {
 
 span.emoji.gurawow {
     background-image: url("https://yt3.ggpht.com/82joi01FZkAj5IEPXjLuPY_nJx-vji0CIuLMfN9iqP7IoLY3fzo1rVYtKcp41V5Si9tdX15xlQ=w32-h32-c-k-nd");
+}
+
+span.emoji.guraaa {
+    background-image: url("https://yt3.ggpht.com/PDXhUcNSLLKnCeNlezzFuSvLs39aiTuVju40B41WbV-Geqcfbx6dhmYRwTaQSZ-d_zYCB6zPlA=w32-h32-c-k-nd");
 }
 
 .gridContainer {
