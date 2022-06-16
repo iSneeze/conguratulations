@@ -2,16 +2,16 @@ const shrimpDimensions = 75; //px
 
 /// Canvas
 
-function createCanvas() { // creates a canvas
+function createCanvas(id) { // creates a canvas
     let canvas = document.createElement("canvas");
-    canvas.id = "canvas"
+    canvas.id = id;
     document.body.appendChild(canvas);  // add to document
     return canvas;
 }
 
-function sizeCanvas() {                  // resizes canvas. Will create a canvas if it does not exist
+function sizeCanvas(id) {                  // resizes canvas. Will create a canvas if it does not exist
     if (canvas === undefined) {          // if there is no canvas create it
-        canvas = createCanvas();
+        canvas = createCanvas(id);
         ctx = canvas.getContext("2d");   // get the 2D context
     }
     canvas.width = window.innerWidth;    // set the resolution to fill the page
@@ -115,9 +115,9 @@ let running = false;
 let canvas;
 let ctx;
 // the resize listener
-window.addEventListener("resize", sizeCanvas);
+window.addEventListener("resize", sizeCanvas("canvasEbi"));
 // call sizeCanvas to create and set the canvas resolution
-sizeCanvas();
+sizeCanvas("canvasEbi");
 
 let mousePos = new Vector(0, 0);
 let ebis = [];
