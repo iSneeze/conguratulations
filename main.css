@@ -1,7 +1,12 @@
+html,
+body {
+    min-height: 100%;
+}
+
 body {
     font-family: "Lato", sans-serif;
     background: linear-gradient(rgb(91, 172, 238), rgb(0, 27, 148));
-    margin-bottom: 16px;
+    margin: 0px;
 }
 
 .sidenav {
@@ -182,17 +187,17 @@ a.shrimp:hover {
 
     /* Border */
     border: 15px solid;
-    background-color: #418f98;
-    border-image: url(assets/images/borders/darkgreenborder.svg);
+    background-color: #84c6feff;
+    border-image: url(assets/images/borders/blueborder.svg);
     border-image-slice: 8;
     border-image-outset: 0.5;
     min-width: 200px;
 }
 
-.bannerpink {
+.banneryellow {
     border: 15px solid;
-    background-color: #efd0e9ff;
-    border-image: url(assets/images/borders/pinkborder.svg);
+    background-color: #fee597ff;
+    border-image: url(assets/images/borders/yellowborder.svg);
     border-image-slice: 8;
     border-image-outset: 0.5;
 }
@@ -252,7 +257,7 @@ img#cake {
     height: 100%;
     width: 100%;
     position: fixed;
-    z-index: 2;
+    z-index: 5;
     top: 0;
     left: 0;
     overflow-x: hidden;
@@ -297,7 +302,7 @@ span.emoji.guraaa {
 
 span.twitter {
     background-color: white;
-    background-image: url("assets/images/twitter-icon.png");
+    background-image: url("assets/images/birb.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 36px auto;
@@ -321,4 +326,31 @@ span.twitter {
 .citation {
     text-align: end;
     padding-right: 64px;
+}
+
+.ebidance {
+    height: 100px;
+    z-index: 2;
+    position: absolute;
+}
+
+.headerImage {
+    position: relative;
+    width: 900px;
+}
+
+.ebidance.topleft {
+    transform: translate(-950px, -0px);
+}
+
+.ebidance.topright {
+    transform: translate(-20px, -0px);
+}
+
+.ebidance.bottomleft {
+    transform: translate(-730px, 90px);
+}
+
+.ebidance.bottomright {
+    transform: translate(-250px, 90px);
 }

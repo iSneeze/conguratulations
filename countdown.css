@@ -1,0 +1,25 @@
+.flexrow {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.flexrow>div>h4 {
+    margin-bottom: 0px;
+}
+
+.countdownContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#countdown {
+    width: 1000px;
+    max-height: 400px;
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+}
