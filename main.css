@@ -29,6 +29,7 @@ body {
     align-content: center;
     justify-content: center;
     gap: 16px;
+    padding-bottom: 40px;
 }
 
 .sidenav a {
