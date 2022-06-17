@@ -74,6 +74,8 @@
                 <a class="shrimp" href="#cordies"><img class="shrimp"
                         src="assets/images/shrimps/Cordis.png"><span>Cordies
                         Die</span></a>
+                <a class="shrimp" href="#ellesnyt"><img class="shrimp"
+                        src="assets/images/shrimps/ebiElles.png"><span>ellesnyt</span></a>
                 <a class="shrimp wsrgs-animated-on-hover" href="#umbrella"
                     onclick="document.getElementById('kasa-ni-ataru-ame').play()">
                     <img class="shrimp wsrgs-black-rain" src="assets/images/shrimps/umbrella.png">
@@ -243,7 +245,7 @@
                         <div class="content">
                             <img class="shrimp" src="assets/images/shrimps/ebiLasertron.png">
                             <span>Lasertron</span>
-                            <a href="https://twitter.com/Lasertron125 target=" _blank""><span
+                            <a href="https://twitter.com/Lasertron125" target=" _blank"><span
                                     class="twitter"></span></a>
                         </div>
                     </div>
@@ -254,7 +256,7 @@
             <!-- Cordis -->
             <div id="cordies">
                 <div class="page">
-                    <div class="banner">
+                    <div class="banner banneryellow">
                         <div class="content">
                             <img class="shrimp" src="assets/images/shrimps/Cordis.png">
                             <span>Cordies Die</span>
@@ -263,6 +265,20 @@
                         </div>
                     </div>
                     <iframe src="./pages/cordis/page.html"
+                        onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+                </div>
+            </div>
+            <!-- Elles -->
+            <div id="ellesnyt">
+                <div class="page">
+                    <div class="banner">
+                        <div class="content">
+                            <img class="shrimp" src="assets/images/shrimps/ebiElles.png">
+                            <span>ellesnyt</span>
+                            <a href="https://twitter.com/ellesnyt" target="_blank"><span class="twitter"></span></a>
+                        </div>
+                    </div>
+                    <iframe src="./pages/elles/page.html"
                         onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
                 </div>
             </div>
