@@ -89,7 +89,7 @@ class Ebi {
         // let acceleration always point to the mouse cursor.
         this.acceleration = mousePos.sub(this.coords).normal.scale(0.3);
         // every frame the acceleration gets added to the velocity, and scaled by a friction factor
-        this.velocity = this.velocity.scale(0.9965).add(this.acceleration);
+        this.velocity = this.velocity.scale(0.99).add(this.acceleration);
         // update the position depending on the velocity
         this.coords = this.coords.add(this.velocity);
         this.rotation = Math.atan2(this.velocity.y, this.velocity.x) - Math.PI;

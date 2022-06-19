@@ -71,6 +71,7 @@ body {
 .mainpage {
     margin-top: 32px;
     margin-left: 320px;
+    margin-right: 70px;
     /* Same as the width of the sidenav */
     font-size: 28px;
     background-color: transparent;
