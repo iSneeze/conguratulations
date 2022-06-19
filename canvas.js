@@ -180,9 +180,12 @@ function releaseTheEbis() {
         document.getElementById("releaseEbis").textContent = "OH NYO, GO BACK!";
         setupEbis();
         running = true;
+        document.body.style.cursor = 'url(https://yt3.ggpht.com/uKixUjXa26VwrLMqbK3UE0-oUY5RqJjrqvawfb7T_WNyGIz5LUU-qNQnhlBtk1324X1ZCBpE=h48-k-nd), auto'
         requestAnimationFrame(update);
     } else {
         document.getElementById("releaseEbis").textContent = "RELEASE THE EBIS";
+        document.body.style.cursor = "";
+
         running = false;
     }
     toggleSideNavEbis();
