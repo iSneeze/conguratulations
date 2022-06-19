@@ -13,6 +13,7 @@
     <meta property="og:description" content="Welcome to the chum zone! >:3" />
     <!-- stylesheets -->
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="modal.css" />
     <link rel="stylesheet" href="countdown.css" />
     <link rel="stylesheet" href="pages/chia/page.css" />
     <link rel="stylesheet" href="pages/lee/page.css" />
@@ -61,6 +62,8 @@
                         src="assets/images/shrimps/ebiByakko.png"><span>Byakko</span></a>
                 <a class="shrimp" href="#chia"><img class="shrimp"
                         src="assets/images/shrimps/ebiChia.png"><span>TheChiaGod</span></a>
+                <a class="shrimp" href="#avril"><img class="shrimp" src="assets/images/shrimps/ebiAvril.png"><span>Avril
+                        Helm</span></a>
                 <a class="shrimp" href="#starcruiser"><img class="shrimp"
                         src="assets/images/shrimps/ebiStarcruiser.png"><span>Starcruiser</span></a>
                 <a class="shrimp" href="#fireholder"><img class="shrimp"
@@ -99,7 +102,8 @@
 
                 <div id="IntroText">
 
-                    <h2><span class="emoji gurapat"> </span> Hi Gura! <span class="emoji gurapat"> </span></h2>
+                    <h2 class="greetingText"><span class="emoji gurapat"> </span> Hi Gura! <span class="emoji gurapat">
+                        </span></h2>
                     <img id="cake" src="assets/images/cake3.png" height="400">
 
                     <p>
@@ -114,12 +118,23 @@
                         We all have so much to say and wish to you, that we made this page to attach a small birthday
                         wish
                         from every ebi
-                        we could get our hands on. They type, talk, draw, sing and even code! For you! Please enjoy!
+                        we could get our hands on. They type, talk, draw, sing and even code! For you! Please enjoy!*
                     </p>
                     <p><span class="emoji guraebi"> </span><span class="emoji guraebi"> </span><span
                             class="emoji guraebi">
                         </span><span class="emoji guraebi"> </span><span class="emoji guraebi"> </span></p>
-                    <p>(p.s. we are not responsible for potential damage caused by cringe)</p>
+
+                    <p class="legal">
+                        *fromchumbieswithlove.com (i.e. 'we', 'us', 'chumbies') displays this content for the express
+                        enjoyment of Gawr
+                        Gura (henceforth referred to as 'Gura', 'Goob', 'Goober', etc..).
+                        fromchumbieswithlove.com accepts no responsibility or liability for any mental distress caused
+                        by Cringe™.
+                        <br />
+                        By continuing to use this website, you agree that you are solely responsible for any <a
+                            href="https://www.youtube.com/watch?v=Nid2HId9EVY" target="_blank">Emotional
+                            Damage</a> or brain rot which may arise from exposure to content on fromchumbieswithlove.com.
+                    </p>
                 </div>
             </div>
 
@@ -178,6 +193,20 @@
                         </div>
                     </div>
                     <iframe src="./pages/chia/page.html"
+                        onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+                </div>
+            </div>
+            <!-- Avril -->
+            <div id="avril">
+                <div class="page">
+                    <div class="banner">
+                        <div class="content">
+                            <img class="shrimp" src="assets/images/shrimps/ebiAvril.png">
+                            <span>Avril Helm</span>
+                            <a href="https://twitter.com/avrilhelm" target="_blank"><span class="twitter"></span></a>
+                        </div>
+                    </div>
+                    <iframe src="./pages/avril/page.html"
                         onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
                 </div>
             </div>
@@ -340,6 +369,14 @@
             </div>
         </div>
     </div>
+
+    <!-- The Modal -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="imgModal">
+        <div id="caption"></div>
+    </div>
+
     <!-- man fuck javascript, I know why I want to learn WASM-->
     <script src="main.js"></script>
     <script src="canvas.js"></script>

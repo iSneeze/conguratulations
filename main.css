@@ -3,8 +3,22 @@ body {
     min-height: 100%;
 }
 
+@font-face {
+    font-family: findalove;
+    src: url(assets/fonts/findalove.otf);
+}
+
+@font-face {
+    font-family: rocko;
+    src: url(assets/fonts/RockoFLF.ttf);
+}
+
+.greetingText {
+    font-family: findalove;
+    font-size: 60px;
+}
+
 body {
-    font-family: "Lato", sans-serif;
     background: linear-gradient(rgb(91, 172, 238), rgb(0, 27, 148));
     margin: 0px;
 }
@@ -18,11 +32,18 @@ body {
     left: 0;
     background: transparent;
     overflow-x: hidden;
+    overflow-y: scroll;
     padding-top: 20px;
 }
 
+.legal {
+    font-size: 10px;
+    font-weight: 600;
+    color: #818181;
+}
+
 .flexnav {
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,6 +51,9 @@ body {
     justify-content: center;
     gap: 16px;
     padding-bottom: 40px;
+    font-family: rocko;
+    font-weight: 600;
+    font-size: 22px;
 }
 
 .sidenav a {
@@ -54,6 +78,12 @@ body {
 
 .frontpage.page {
     flex-direction: column;
+    background-image: url("https://yt3.ggpht.com/BULYK9Ty7JxTy--Y65Y35h7NFSFWGQJobURm1fcyuOMqKE7CMHIbTSRbWIlCapjxoFq1o0KUvSo");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fffffff8;
+    background-blend-mode: color;
+    background-position: center;
 }
 
 .page {
@@ -69,6 +99,8 @@ body {
     background-color: #FFFFFF;
     min-height: 500px;
     font-size: 24px;
+    font-family: rocko;
+    font-style: italic;
     text-align: center;
     padding: 16px;
     border-radius: 20px;
@@ -82,13 +114,10 @@ body {
 
 .page p {
     margin: 12px 8px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
 #IntroText {
-    background-color: #A8BDCD;
-    border: dotted;
-    border-width: 3px;
     border-color: #86949E;
     font-size: 24px;
     text-align: center;
@@ -236,7 +265,7 @@ a.shrimp:hover {
 }
 
 #postcard {
-    margin-top: 2px;
+    margin-top: 2px,
 }
 
 img.shrimpD {
