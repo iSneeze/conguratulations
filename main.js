@@ -8,12 +8,6 @@ function initModal() {
     var modalImg = document.getElementById("imgModal");
     var captionText = document.getElementById("caption");
 
-    if (img.length == 0) {
-        setTimeout(() => {
-            initModal();
-        }, 1000);
-    }
-
     for (let i = 0; i < img.length; i++) {
         const element = img[i];
         element.onclick = function () {
@@ -32,6 +26,11 @@ function initModal() {
     }
 }
 
-initModal();
 
+setTimeout(() => {
+    initModal();
+}, 500);
 
+setTimeout(() => {
+    initModal();
+}, 2500);
