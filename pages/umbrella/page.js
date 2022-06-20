@@ -1,3 +1,4 @@
+const AUDIO_FADE_DURATION = 4096;
 const FPS = 60;
 const GREY = 128 + 64 + 32;
 const MAX_FADE = 1024;
@@ -5,6 +6,7 @@ const MAX_RADIUS = 4;
 const NUM_DROPS = 64;
 const RADIUS_GROWTH = 1 / 64;
 const RAINFALL_GROWTH = 1 / 128;
+const VOLUME_DELTA = 1 / 128;
 
 class RainAnimation {
     constructor() {
@@ -134,6 +136,37 @@ class Raindrop {
     }
 }
 
+class FadeIn {
+    constructor(player, duration) {
+        this.player = player;
+        this.duration = duration;
+        this.targetVolume = 1;
+        this.delay = null;
+        this.timeoutId = null;
+        this.fadeIn = this.fadeIn.bind(this);
+    }
+
+    start() {
+        this.targetVolume = this.player.volume;
+        this.player.volume = 0;
+        const steps = this.targetVolume / VOLUME_DELTA;
+        this.delay = this.duration / steps;
+        this.timeoutId = setTimeout(this.fadeIn, this.delay);
+    }
+
+    reset() {
+        this.player.volume = this.targetVolume;
+        clearTimeout(this.timeoutId);
+    }
+
+    fadeIn() {
+        this.player.volume += VOLUME_DELTA;
+        if (this.player.volume < this.targetVolume) {
+            this.timeoutId = setTimeout(this.fadeIn, this.delay);
+        }
+    }
+}
+
 function randInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
@@ -141,7 +174,10 @@ function randInt(min, max) {
 window.addEventListener("load", () => {
     const animation = new RainAnimation();
     const player = document.getElementById("kasa-ni-ataru-ame");
+    const fader = new FadeIn(player, AUDIO_FADE_DURATION);
     player.addEventListener("play", animation.start.bind(animation));
     player.addEventListener("pause", animation.stop.bind(animation));
+    player.addEventListener("play", fader.start.bind(fader));
+    player.addEventListener("pause", fader.reset.bind(fader));
     window.addEventListener("resize", animation.resize.bind(animation));
 });
